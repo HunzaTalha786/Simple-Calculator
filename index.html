@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>SIMPLE <br> CALCULATOR</h1>
+    <div id="container">
+        <label for="num1">First Number</label>
+        <input id="num1" type="number">
+        <label for="num2">Second Number </label>
+        <input id="num2" type="number">
+        <label for="operator">Select Operator</label>
+
+        <div class="operator">
+            <button class="btn" onclick="setOperator('+')">+</button>
+            <button class="btn" onclick="setOperator('-')">-</button>
+            <button class="btn" onclick="setOperator('*')">*</button>
+            <button class="btn" onclick="setOperator('/')">%</button>
+        </div>
+
+        <button class="cal" onclick="calculate()">Calculate</button>
+        <label for="result">Result</label>
+        <input id="result" type="number">
+        
+        <button class="ref" onclick="refresh()">Refresh</button>
+
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
